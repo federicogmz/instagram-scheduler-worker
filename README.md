@@ -38,7 +38,7 @@ the network drops halfway through publishing.
   (spring-forward gap) are rejected instead of silently shifted.
 - **Notifications** on success and on every failure (Telegram; swap `src/notify.js` for Slack/Discord/e-mail).
 - **Dry run:** `igs test <id>` makes Instagram build the container and tells you if it accepts it, without publishing.
-- **Zero runtime dependencies.** 29 tests run on plain `node --test`, with real SQL (in-memory SQLite) standing in for D1.
+- **Zero runtime dependencies.** The test suite runs on plain `node --test`, with real SQL (in-memory SQLite) standing in for D1.
 
 Not supported (by design or by API): Stories, first comments, tagging users in the image, scheduling from the Instagram app.
 
