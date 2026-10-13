@@ -1,0 +1,10 @@
+{
+  "id": "launch-announcement",
+  "account": "main",
+  "title": "Launch announcement",
+  "type": "image",
+  "media": ["https://instagram-scheduler.example.workers.dev/media/2026-10/launch.jpg"],
+  "caption": "We are live! 🎉\n\n#launch #opensource",
+  "scheduled_local": "2026-10-19 19:00",
+  "collaborators": []
+}

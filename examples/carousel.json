@@ -1,0 +1,13 @@
+{
+  "id": "weekly-tips-carousel",
+  "account": "main",
+  "title": "Weekly tips",
+  "type": "carousel",
+  "media": [
+    "https://instagram-scheduler.example.workers.dev/media/2026-10/tip-1.jpg",
+    "https://instagram-scheduler.example.workers.dev/media/2026-10/tip-2.jpg",
+    "https://instagram-scheduler.example.workers.dev/media/2026-10/tip-3.jpg"
+  ],
+  "caption": "Three tips for this week 👇",
+  "scheduled_local": "2026-10-21 12:30"
+}

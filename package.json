@@ -1,0 +1,39 @@
+{
+  "name": "instagram-scheduler-worker",
+  "version": "0.1.0",
+  "description": "Schedule Instagram posts (images, carousels, reels) from a queue on Cloudflare Workers + D1 + R2. Idempotent: never posts twice.",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "test": "node --test --no-warnings",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/federicogmz/instagram-scheduler-worker.git"
+  },
+  "homepage": "https://github.com/federicogmz/instagram-scheduler-worker#readme",
+  "bugs": {
+    "url": "https://github.com/federicogmz/instagram-scheduler-worker/issues"
+  },
+  "keywords": [
+    "instagram",
+    "scheduler",
+    "cloudflare-workers",
+    "d1",
+    "r2",
+    "content-publishing",
+    "graph-api"
+  ],
+  "author": "Federico Gómez"
+}

@@ -1,0 +1,6 @@
+# Copy to .dev.vars for `wrangler dev` (git-ignored). In production use `wrangler secret put <NAME>`.
+META_ACCESS_TOKEN=
+PUBLISH_SECRET=change-me-to-a-long-random-string
+# Optional notifications
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_CHAT_ID=

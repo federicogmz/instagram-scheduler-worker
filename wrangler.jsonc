@@ -1,0 +1,26 @@
+{
+  "name": "instagram-scheduler",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-01",
+  "triggers": { "crons": ["*/5 * * * *"] },
+
+  // Create these first:  wrangler d1 create instagram-scheduler   and   wrangler r2 bucket create instagram-scheduler-media
+  "d1_databases": [
+    { "binding": "DB", "database_name": "instagram-scheduler", "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID" }
+  ],
+  "r2_buckets": [
+    { "binding": "MEDIA", "bucket_name": "instagram-scheduler-media" }
+  ],
+
+  "vars": {
+    // IANA time zone used to read `scheduled_local` and to show times in messages.
+    "TIMEZONE": "UTC",
+    // Language of notifications: "en" (default) or "es".
+    "NOTIFY_LANG": "en",
+    "GRAPH_VERSION": "v21.0",
+    // One entry per Instagram professional account. The key is what you put in a post's "account" field.
+    // page_id: the Facebook Page linked to the Instagram account.  ig_id: the Instagram Business/Creator account id.
+    "ACCOUNTS": "{\"main\":{\"page_id\":\"REPLACE_PAGE_ID\",\"ig_id\":\"REPLACE_IG_USER_ID\",\"label\":\"@your_handle\"}}"
+  }
+  // Secrets (never in this file):  wrangler secret put META_ACCESS_TOKEN | PUBLISH_SECRET | TELEGRAM_BOT_TOKEN | TELEGRAM_CHAT_ID
+}
